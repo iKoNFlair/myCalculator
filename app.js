@@ -19,19 +19,7 @@ for(items of btn)
 }
 
 document.addEventListener("keypress", (e) => {
-   
-//    for(let i=0; i<btn.length; i++)
-//    {
-//        classList.toggle("btn-click");
-//        setTimeout(() => {
-//            e.target.classList.toggle("btn-click");
-//        }, 100);
-//    }
-
-console.log(e.key);
-calc(e.key);
-
-
+   calc(e.key);
 })
 
 function calc(key){
