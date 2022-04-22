@@ -44,7 +44,12 @@ function calc(key){
       screenValue = screenValue.slice(0,-1);
       screen.value = screenValue;
   }
-  else {
+   else if(key == '%')
+   {
+      screenValue /= 100;
+      screen.value = screenValue;
+   }
+   else {
       screenValue += key;
       screen.value = screenValue;
   }
