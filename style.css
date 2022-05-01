@@ -7,13 +7,35 @@ body{
     height: 679px;
 }
 
+
 .container{
     text-align: center;
     background-color: rgba(255, 255, 255, 0.253);
-    width: 300px;
-    height: 425px;
+    width: 350px;
+    height: 460px;
     box-shadow: 0 0 10px 3px rgba(0, 247, 255, 0.562);
     border-radius: 10px;
+    transition: 0.5s;   
+}
+
+.max-container{
+    width: 400px;
+    height: 500px;
+}
+
+.scientific{
+    display: none;
+}
+
+.scientific-unhide{
+    transition: 1s;
+    display: inline-block;
+}
+
+
+.back{
+    transform: translateY(0px);
+    visibility: visible;
 }
 
 #screen{
@@ -31,6 +53,8 @@ body{
     color: rgba(0, 247, 255, 0.562);
 }
 
+
+
 .btn{
     margin: 5px 5px;
     width: 50px;
@@ -41,16 +65,10 @@ body{
     box-shadow: 0 0 10px 1px rgba(0, 247, 255, 0.562);
     font-size: 1rem;
     color: rgb(0, 255, 255);
+    transition: 1s;
     
 }
 
-.scientific{
-    /* visibility: hidden; */
-    z-index: 0;
-    position: absolute;
-    margin: 0;
-
-}
 
 .btn-click{
     background-color: rgba(0, 110, 255, 0.651) ;
